@@ -1,0 +1,2058 @@
+#include<iostream>
+#include<string>
+
+
+
+using namespace std;
+//for choosing menu
+class Ccheck
+{
+public:
+	void mode();
+	void mode2();
+	void mode3();
+
+};
+
+// for show instruction and main
+class Cshow
+{
+public:
+	void showHow();
+	void showMain();
+
+};
+
+void Ccheck::mode()
+{// Vocab Animal
+	int c = 0, mark = 0, wrong = 0;
+	char ans, answer;
+
+
+	system("cls");
+	cout << "* A n i m a l *\n" << endl;
+	//Ant
+	cout << "1. A _ T" << endl;
+	cout << "Answer :";
+
+	cin >> answer;
+
+	if (answer == 'n' || answer == 'N')
+	{
+
+		cout << "Excellent ! it's Ant !" << endl;
+		cout << "+_____________________+\n" << endl;
+		mark++;
+	}
+	else
+	{
+		for (c = 1; c <= 6; c++)
+		{
+			cout << "Oop! it's wrong, try again." << endl;
+			wrong++;
+			cin >> answer;
+			if (answer == 'n' || answer == 'N')
+			{
+
+				cout << "Excellent ! it's Ant !" << endl;
+				cout << "+_____________________+\n" << endl;
+				mark++;
+				break;
+			}
+		}
+	}
+
+
+	// Elephant
+	cout << "2. _ L _ P H _ N T" << endl;
+
+	cout << "Answer :";
+
+	cin >> answer;
+
+
+	if (answer == 'e' || answer == 'E')
+	{
+
+		cout << "Well done ! Keep going !" << endl;
+
+		cin >> answer;
+
+		if (answer == 'a' || answer == 'A')
+		{
+			cout << "Excellent ! it's Elephant !" << endl;
+			cout << "+________________________+\n" << endl;
+			mark++;
+		}
+	}
+	else if (answer == 'a' || answer == 'A')
+	{
+
+		cout << "Well done ! Keep going !" << endl;
+
+		cin >> answer;
+
+		if (answer == 'e' || answer == 'E')
+		{
+			cout << "Excellent ! it's Elephant !" << endl;
+			cout << "+_______________________+\n" << endl;
+			mark++;
+
+		}
+	}
+	else
+	{
+		for (c = 1; c <= 6; c++)
+		{
+			cout << "Oop! it's wrong, try again." << endl;
+			wrong++;
+
+			cin >> answer;
+
+			if (answer == 'e' || answer == 'E')
+			{
+
+				cout << "Well done ! Keep going !" << endl;
+
+				cin >> answer;
+
+				if (answer == 'a' || answer == 'A')
+				{
+					cout << "Excellent ! it's Elephant !" << endl;
+					cout << "+_______________________+\n" << endl;
+					mark++;
+					break;
+				}
+			}
+			else if (answer == 'a' || answer == 'A')
+			{
+
+				cout << "Well done ! Keep going !" << endl;
+
+				cin >> answer;
+
+				if (answer == 'e' || answer == 'E')
+				{
+					cout << "Excellent ! it's Elephant !" << endl;
+					cout << "+_______________________+\n" << endl;
+					mark++;
+					break;
+				}
+			}
+		}
+	}
+	// Cat
+
+	cout << "3. C _ T" << endl;
+	cin >> answer;
+
+	if (answer == 'a' || answer == 'A')
+	{
+
+		cout << "Excellent ! it's Cat !" << endl;
+		cout << "+____________________+\n" << endl;
+		mark++;
+	}
+	else
+	{
+		for (c = 1; c <= 6; c++)
+		{
+			cout << "Oop! it's wrong, try again." << endl;
+			wrong++;
+			cin >> answer;
+			if (answer == 'a' || answer == 'A')
+			{
+
+				cout << "Excellent ! it's Cat !" << endl;
+				cout << "+____________________+\n" << endl;
+				mark++;
+				break;
+			}
+		}
+	}
+	// Badger
+	cout << "4. B _ D G _ R" << endl;
+	cout << "Answer :";
+
+	cin >> answer;
+
+
+	if (answer == 'e' || answer == 'E')
+	{
+
+		cout << "Well done ! Keep going !" << endl;
+
+		cin >> answer;
+
+		if (answer == 'a' || answer == 'A')
+		{
+			cout << "Excellent ! it's Badger !" << endl;
+			cout << "+_______________________+\n" << endl;
+			mark++;
+		}
+	}
+	else if (answer == 'a' || answer == 'A')
+	{
+
+		cout << "Well done ! Keep going !" << endl;
+
+		cin >> answer;
+
+		if (answer == 'e' || answer == 'E')
+		{
+			cout << "Excellent ! it's Badger !" << endl;
+			cout << "+_______________________+\n" << endl;
+			mark++;
+		}
+	}
+	else
+	{
+		for (c = 1; c <= 6; c++)
+		{
+			cout << "Oop! it's wrong, try again." << endl;
+			wrong++;
+
+			cin >> answer;
+
+			if (answer == 'e' || answer == 'E')
+			{
+
+				cout << "Well done ! Keep going !" << endl;
+
+				cin >> answer;
+
+				if (answer == 'a' || answer == 'A')
+				{
+					cout << "Excellent ! it's Badger !" << endl;
+					cout << "+_______________________+\n" << endl;
+					mark++;
+					break;
+				}
+			}
+			else if (answer == 'a' || answer == 'A')
+			{
+
+				cout << "Well done ! Keep going !" << endl;
+
+				cin >> answer;
+
+				if (answer == 'e' || answer == 'E')
+				{
+					cout << "Excellent ! it's Badger !" << endl;
+					cout << "+_______________________+\n" << endl;
+					mark++;
+					break;
+				}
+			}
+		}
+	}
+	// Otter
+	cout << "5. _ T T _ R" << endl;
+	cout << "Answer :";
+
+	cin >> answer;
+
+
+	if (answer == 'e' || answer == 'E')
+	{
+
+		cout << "Well done ! Keep going !" << endl;
+
+		cin >> answer;
+
+		if (answer == 'o' || answer == 'O')
+		{
+			cout << "Excellent ! it's Otter !" << endl;
+			cout << "+_______________________+\n" << endl;
+			mark++;
+		}
+	}
+	else if (answer == 'o' || answer == 'O')
+	{
+
+		cout << "Well done ! Keep going !" << endl;
+
+		cin >> answer;
+
+		if (answer == 'e' || answer == 'E')
+		{
+			cout << "Excellent ! it's Otter !" << endl;
+			cout << "+_______________________+\n" << endl;
+			mark++;
+		}
+	}
+	else
+	{
+		for (c = 1; c <= 6; c++)
+		{
+			cout << "Oop! it's wrong, try again." << endl;
+			wrong++;
+
+			cin >> answer;
+
+			if (answer == 'e' || answer == 'E')
+			{
+
+				cout << "Well done ! Keep going !" << endl;
+
+				cin >> answer;
+
+				if (answer == 'o' || answer == 'O')
+				{
+					cout << "Excellent ! it's Otter !" << endl;
+					cout << "+_______________________+\n" << endl;
+					mark++;
+					break;
+				}
+			}
+			else if (answer == 'o' || answer == 'O')
+			{
+
+				cout << "Well done ! Keep going !" << endl;
+
+				cin >> answer;
+
+				if (answer == 'e' || answer == 'E')
+				{
+					cout << "Excellent ! it's Otter !" << endl;
+					cout << "+_______________________+\n" << endl;
+					mark++;
+					break;
+				}
+			}
+		}
+	}
+	//Pigeon
+
+	cout << "6.P _ G _ _ N" << endl;
+	cout << "Answer :";
+
+	cin >> answer;
+
+
+	if (answer == 'e' || answer == 'E')
+	{
+
+		cout << "Well done ! Keep going !" << endl;
+
+		cin >> answer;
+
+		if (answer == 'i' || answer == 'I')
+		{
+			cout << "Well done ! Keep going !" << endl;
+
+			cin >> answer;
+		}
+
+		if (answer == 'o' || answer == 'O')
+		{
+			cout << "Excellent ! it's Pigeon !" << endl;
+			cout << "+_______________________+\n" << endl;
+			mark++;
+		}
+	}
+	else if (answer == 'o' || answer == 'O')
+	{
+
+		cout << "Well done ! Keep going !" << endl;
+
+		cin >> answer;
+
+		if (answer == 'i' || answer == 'I')
+		{
+			cout << "Well done ! Keep going !" << endl;
+
+			cin >> answer;
+		}
+
+		if (answer == 'e' || answer == 'E')
+		{
+			cout << "Excellent ! it's Pigeon !" << endl;
+			cout << "+_______________________+\n" << endl;
+			mark++;
+		}
+	}
+	else if (answer == 'i' || answer == 'I')
+	{
+
+		cout << "Well done ! Keep going !" << endl;
+
+		cin >> answer;
+
+		if (answer == 'o' || answer == 'O')
+		{
+			cout << "Well done ! Keep going !" << endl;
+
+			cin >> answer;
+		}
+
+		if (answer == 'e' || answer == 'E')
+		{
+			cout << "Excellent ! it's Pigeon !" << endl;
+			cout << "+_______________________+\n" << endl;
+			mark++;
+		}
+	}
+	else
+	{
+		for (c = 1; c <= 6; c++)
+		{
+			cout << "Oop! it's wrong, try again." << endl;
+			wrong++;
+
+			cin >> answer;
+
+			if (answer == 'e' || answer == 'E')
+			{
+
+				cout << "Well done ! Keep going !" << endl;
+
+				cin >> answer;
+
+				if (answer == 'i' || answer == 'I')
+				{
+					cout << "Well done ! Keep going !" << endl;
+
+					cin >> answer;
+				}
+
+				if (answer == 'o' || answer == 'O')
+				{
+					cout << "Excellent ! it's Pigeon !" << endl;
+					cout << "+_______________________+\n" << endl;
+					mark++;
+					break;
+				}
+			}
+			else if (answer == 'o' || answer == 'O')
+			{
+
+				cout << "Well done ! Keep going !" << endl;
+
+				cin >> answer;
+
+				if (answer == 'i' || answer == 'I')
+				{
+					cout << "Well done ! Keep going !" << endl;
+
+					cin >> answer;
+				}
+
+				if (answer == 'e' || answer == 'E')
+				{
+					cout << "Excellent ! it's Pigeon !" << endl;
+					cout << "+_______________________+\n" << endl;
+					mark++;
+					break;
+				}
+			}
+			else if (answer == 'i' || answer == 'I')
+			{
+
+				cout << "Well done ! Keep going !" << endl;
+
+				cin >> answer;
+
+				if (answer == 'o' || answer == 'O')
+				{
+					cout << "Well done ! Keep going !" << endl;
+
+					cin >> answer;
+				}
+
+				if (answer == 'e' || answer == 'E')
+				{
+					cout << "Excellent ! it's Pigeon !" << endl;
+					cout << "+_______________________+\n" << endl;
+					mark++;
+					break;
+				}
+
+
+			}
+		}
+	}
+
+	system("cls");
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+]                => The game is over <=             [+]" << endl;
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+]             You answered " << mark << " times correctly        [+]" << endl;
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+]              You answered " << wrong << " times wrong           [+]" << endl;
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+][+][+][+][+][+][+][+][+][+][+][+][+][+][+][+][+][+][+]\n" << endl;
+
+
+	//cout << "You answered " << mark << " times correctly" << endl;
+	//cout << "You answered " << wrong << " times wrong" << endl;
+}
+
+void Ccheck::mode2()
+{// Vocab Mood
+	int c, mark = 0, wrong = 0;
+	char ans, answer;
+
+
+	system("cls");
+	cout << "* M o o d *\n" << endl;
+
+	//Disgusted
+	cout << "1.D _ S G _ S T" << endl;
+
+	cout << "Answer :";
+
+	cin >> answer;
+
+
+	if (answer == 'i' || answer == 'I')
+	{
+
+		cout << "Well done ! Keep going !" << endl;
+
+		cin >> answer;
+
+		if (answer == 'u' || answer == 'U')
+		{
+			cout << "Excellent ! it's Disgust !" << endl;
+			cout << "+_______________________+\n" << endl;
+			mark++;
+		}
+	}
+	else if (answer == 'u' || answer == 'U')
+	{
+
+		cout << "Well done ! Keep going !" << endl;
+
+		cin >> answer;
+
+		if (answer == 'i' || answer == 'I')
+		{
+			cout << "Excellent ! it's Disgust !" << endl;
+			cout << "+_______________________+\n" << endl;
+			mark++;
+		}
+	}
+	else
+	{
+		for (c = 1; c <= 6; c++)
+		{
+			cout << "Oop! it's wrong, try again." << endl;
+			wrong++;
+
+			cin >> answer;
+
+			if (answer == 'i' || answer == 'I')
+			{
+
+				cout << "Well done ! Keep going !" << endl;
+
+				cin >> answer;
+
+				if (answer == 'u' || answer == 'U')
+				{
+					cout << "Excellent ! it's Disgust !" << endl;
+					cout << "+_______________________+\n" << endl;
+					mark++;
+					break;
+				}
+			}
+			else if (answer == 'u' || answer == 'U')
+			{
+
+				cout << "Well done ! Keep going !" << endl;
+
+				cin >> answer;
+
+				if (answer == 'i' || answer == 'U')
+				{
+					cout << "Excellent ! it's Disgust !" << endl;
+					cout << "+_______________________+\n" << endl;
+					mark++;
+					break;
+				}
+			}
+		}
+	}
+	//Surprised
+	cout << "2.S _ R P R _ S _ D" << endl;
+
+	cout << "Answer :";
+
+	cin >> answer;
+
+
+	if (answer == 'u' || answer == 'U')
+	{
+
+		cout << "Well done ! Keep going !" << endl;
+
+		cin >> answer;
+
+		if (answer == 'i' || answer == 'I')
+		{
+			cout << "Well done ! Keep going !" << endl;
+
+			cin >> answer;
+		}
+
+		if (answer == 'e' || answer == 'E')
+		{
+			cout << "Excellent ! it's Surprised !" << endl;
+			cout << "+_______________________+\n" << endl;
+			mark++;
+		}
+	}
+	else if (answer == 'i' || answer == 'I')
+	{
+
+		cout << "Well done ! Keep going !" << endl;
+
+		cin >> answer;
+
+		if (answer == 'e' || answer == 'E')
+		{
+			cout << "Well done ! Keep going !" << endl;
+
+			cin >> answer;
+		}
+
+		if (answer == 'u' || answer == 'U')
+		{
+			cout << "Excellent ! it's Surprised !" << endl;
+			cout << "+_______________________+\n" << endl;
+			mark++;
+		}
+	}
+	else if (answer == 'e' || answer == 'E')
+	{
+
+		cout << "Well done ! Keep going !" << endl;
+
+		cin >> answer;
+
+		if (answer == 'u' || answer == 'U')
+		{
+			cout << "Well done ! Keep going !" << endl;
+
+			cin >> answer;
+		}
+
+		if (answer == 'i' || answer == 'I')
+		{
+			cout << "Excellent ! it's Surprised !" << endl;
+			cout << "+_______________________+\n" << endl;
+			mark++;
+		}
+	}
+	else if (answer == 'u' || answer == 'U')
+	{
+
+		cout << "Well done ! Keep going !" << endl;
+
+		cin >> answer;
+
+		if (answer == 'e' || answer == 'E')
+		{
+			cout << "Well done ! Keep going !" << endl;
+
+			cin >> answer;
+		}
+
+		if (answer == 'i' || answer == 'I')
+		{
+			cout << "Excellent ! it's Surprised !" << endl;
+			cout << "+_______________________+\n" << endl;
+			mark++;
+		}
+	}
+	else
+	{
+		for (c = 1; c <= 6; c++)
+		{
+			cout << "Oop! it's wrong, try again." << endl;
+			wrong++;
+
+			cin >> answer;
+
+			if (answer == 'e' || answer == 'E')
+			{
+
+				cout << "Well done ! Keep going !" << endl;
+
+				cin >> answer;
+
+				if (answer == 'i' || answer == 'I')
+				{
+					cout << "Well done ! Keep going !" << endl;
+
+					cin >> answer;
+				}
+
+				if (answer == 'o' || answer == 'O')
+				{
+					cout << "Excellent ! it's Surprised !" << endl;
+					cout << "+_______________________+\n" << endl;
+					mark++;
+					break;
+				}
+			}
+			else if (answer == 'o' || answer == 'O')
+			{
+
+				cout << "Well done ! Keep going !" << endl;
+
+				cin >> answer;
+
+				if (answer == 'i' || answer == 'I')
+				{
+					cout << "Well done ! Keep going !" << endl;
+
+					cin >> answer;
+				}
+
+				if (answer == 'e' || answer == 'E')
+				{
+					cout << "Excellent ! it's Surprised !" << endl;
+					cout << "+_______________________+\n" << endl;
+					mark++;
+					break;
+				}
+			}
+			else if (answer == 'i' || answer == 'I')
+			{
+
+				cout << "Well done ! Keep going !" << endl;
+
+				cin >> answer;
+
+				if (answer == 'o' || answer == 'O')
+				{
+					cout << "Well done ! Keep going !" << endl;
+
+					cin >> answer;
+				}
+
+				if (answer == 'e' || answer == 'E')
+				{
+					cout << "Excellent ! it's Surprised !" << endl;
+					cout << "+_______________________+\n" << endl;
+					mark++;
+					break;
+				}
+			}
+		}
+	}
+
+	// Anger
+	cout << "3._ N G _ R" << endl;
+
+	cout << "Answer :";
+
+	cin >> answer;
+
+
+	if (answer == 'a' || answer == 'A')
+	{
+
+		cout << "Well done ! Keep going !" << endl;
+
+		cin >> answer;
+
+		if (answer == 'e' || answer == 'E')
+		{
+			cout << "Excellent ! it's Anger !" << endl;
+			cout << "+_______________________+\n" << endl;
+			mark++;
+		}
+	}
+	else if (answer == 'e' || answer == 'E')
+	{
+
+		cout << "Well done ! Keep going !" << endl;
+
+		cin >> answer;
+
+		if (answer == 'a' || answer == 'A')
+		{
+			cout << "Excellent ! it's Anger !" << endl;
+			cout << "+_______________________+\n" << endl;
+			mark++;
+		}
+	}
+	else
+	{
+		for (c = 1; c <= 6; c++)
+		{
+			cout << "Oop! it's wrong, try again." << endl;
+			wrong++;
+
+			cin >> answer;
+
+			if (answer == 'a' || answer == 'A')
+			{
+
+				cout << "Well done ! Keep going !" << endl;
+
+				cin >> answer;
+
+				if (answer == 'e' || answer == 'E')
+				{
+					cout << "Excellent ! it's Anger !" << endl;
+					cout << "+_______________________+\n" << endl;
+					mark++;
+					break;
+				}
+			}
+			else if (answer == 'e' || answer == 'E')
+			{
+
+				cout << "Well done ! Keep going !" << endl;
+
+				cin >> answer;
+
+				if (answer == 'a' || answer == 'A')
+				{
+					cout << "Excellent ! it's Anger !" << endl;
+					cout << "+_______________________+\n" << endl;
+					mark++;
+					break;
+				}
+			}
+		}
+	}
+	// Interested
+	cout << "4._ N T _ R _ S T _ D" << endl;
+	cout << "Answer :";
+
+	cin >> answer;
+
+
+	if (answer == 'i' || answer == 'I')
+	{
+
+		cout << "Well done ! Keep going !" << endl;
+
+		cin >> answer;
+
+		if (answer == 'e' || answer == 'E')
+		{
+			cout << "Excellent ! it's Interested !" << endl;
+			cout << "+___________________________+\n" << endl;
+			mark++;
+		}
+	}
+	else if (answer == 'e' || answer == 'E')
+	{
+
+		cout << "Well done ! Keep going !" << endl;
+
+		cin >> answer;
+
+		if (answer == 'i' || answer == 'I')
+		{
+			cout << "Excellent ! it's Interested !" << endl;
+			cout << "+___________________________+\n" << endl;
+			mark++;
+		}
+	}
+	else
+	{
+		for (c = 1; c <= 6; c++)
+		{
+			cout << "Oop! it's wrong, try again." << endl;
+			wrong++;
+
+			cin >> answer;
+
+			if (answer == 'i' || answer == 'I')
+			{
+
+				cout << "Well done ! Keep going !" << endl;
+
+				cin >> answer;
+
+				if (answer == 'e' || answer == 'E')
+				{
+					cout << "Excellent ! it's Interested !" << endl;
+					cout << "+___________________________+\n" << endl;
+					mark++;
+					break;
+				}
+			}
+			else if (answer == 'e' || answer == 'E')
+			{
+
+				cout << "Well done ! Keep going !" << endl;
+
+				cin >> answer;
+
+				if (answer == 'i' || answer == 'U')
+				{
+					cout << "Excellent ! it's Interested !" << endl;
+					cout << "+___________________________+\n" << endl;
+					mark++;
+					break;
+				}
+			}
+		}
+	}
+
+	// Powerful
+	cout << "5.P _ W _ R F _ L" << endl;
+	cout << "Answer :";
+
+	cin >> answer;
+
+
+	if (answer == 'e' || answer == 'E')
+	{
+
+		cout << "Well done ! Keep going !" << endl;
+
+		cin >> answer;
+
+		if (answer == 'u' || answer == 'U')
+		{
+			cout << "Well done ! Keep going !" << endl;
+
+			cin >> answer;
+		}
+
+		if (answer == 'o' || answer == 'O')
+		{
+			cout << "Excellent ! it's Powerful !" << endl;
+			cout << "+_________________________+\n" << endl;
+			mark++;
+		}
+	}
+	else if (answer == 'o' || answer == 'O')
+	{
+
+		cout << "Well done ! Keep going !" << endl;
+
+		cin >> answer;
+
+		if (answer == 'e' || answer == 'E')
+		{
+			cout << "Well done ! Keep going !" << endl;
+
+			cin >> answer;
+		}
+
+		if (answer == 'u' || answer == 'U')
+		{
+			cout << "Excellent ! it's Powerful!" << endl;
+			cout << "+________________________+\n" << endl;
+			mark++;
+		}
+	}
+	else if (answer == 'u' || answer == 'U')
+	{
+
+		cout << "Well done ! Keep going !" << endl;
+
+		cin >> answer;
+
+		if (answer == 'o' || answer == 'O')
+		{
+			cout << "Well done ! Keep going !" << endl;
+
+			cin >> answer;
+		}
+
+		if (answer == 'e' || answer == 'E')
+		{
+			cout << "Excellent ! it's Powerful!" << endl;
+			cout << "+________________________+\n" << endl;
+			mark++;
+		}
+	}
+	else
+	{
+		for (c = 1; c <= 6; c++)
+		{
+			cout << "Oop! it's wrong, try again." << endl;
+			wrong++;
+
+			cin >> answer;
+
+			if (answer == 'e' || answer == 'E')
+			{
+
+				cout << "Well done ! Keep going !" << endl;
+
+				cin >> answer;
+
+				if (answer == 'u' || answer == 'U')
+				{
+					cout << "Well done ! Keep going !" << endl;
+
+					cin >> answer;
+				}
+
+				if (answer == 'o' || answer == 'O')
+				{
+					cout << "Excellent ! it's Powerful !" << endl;
+					cout << "+_________________________+\n" << endl;
+					mark++;
+					break;
+				}
+			}
+			else if (answer == 'o' || answer == 'O')
+			{
+
+				cout << "Well done ! Keep going !" << endl;
+
+				cin >> answer;
+
+				if (answer == 'u' || answer == 'U')
+				{
+					cout << "Well done ! Keep going !" << endl;
+
+					cin >> answer;
+				}
+
+				if (answer == 'e' || answer == 'E')
+				{
+					cout << "Excellent ! it's Powerful!" << endl;
+					cout << "+________________________+\n" << endl;
+					mark++;
+					break;
+				}
+			}
+			else if (answer == 'u' || answer == 'U')
+			{
+
+				cout << "Well done ! Keep going !" << endl;
+
+				cin >> answer;
+
+				if (answer == 'o' || answer == 'O')
+				{
+					cout << "Well done ! Keep going !" << endl;
+
+					cin >> answer;
+				}
+
+				if (answer == 'e' || answer == 'E')
+				{
+					cout << "Excellent ! it's Powerful!" << endl;
+					cout << "+________________________+\n" << endl;
+					mark++;
+					break;
+				}
+			}
+		}
+	}
+
+	// Confused
+	cout << "6.C _ N F _ S _ D" << endl;
+	cout << "Answer :";
+
+	cin >> answer;
+
+
+	if (answer == 'e' || answer == 'E')
+	{
+
+		cout << "Well done ! Keep going !" << endl;
+
+		cin >> answer;
+
+		if (answer == 'u' || answer == 'U')
+		{
+			cout << "Well done ! Keep going !" << endl;
+
+			cin >> answer;
+		}
+
+		if (answer == 'o' || answer == 'O')
+		{
+			cout << "Excellent ! it's Confused !" << endl;
+			cout << "+_________________________+\n" << endl;
+			mark++;
+		}
+	}
+	else if (answer == 'o' || answer == 'O')
+	{
+
+		cout << "Well done ! Keep going !" << endl;
+
+		cin >> answer;
+
+		if (answer == 'e' || answer == 'E')
+		{
+			cout << "Well done ! Keep going !" << endl;
+
+			cin >> answer;
+		}
+
+		if (answer == 'u' || answer == 'U')
+		{
+			cout << "Excellent ! it's Confused!" << endl;
+			cout << "+________________________+\n" << endl;
+			mark++;
+		}
+	}
+	else if (answer == 'u' || answer == 'U')
+	{
+
+		cout << "Well done ! Keep going !" << endl;
+
+		cin >> answer;
+
+		if (answer == 'o' || answer == 'O')
+		{
+			cout << "Well done ! Keep going !" << endl;
+
+			cin >> answer;
+		}
+
+		if (answer == 'e' || answer == 'E')
+		{
+			cout << "Excellent ! it's Confused!" << endl;
+			cout << "+________________________+\n" << endl;
+			mark++;
+		}
+	}
+	else
+	{
+		for (c = 1; c <= 6; c++)
+		{
+			cout << "Oop! it's wrong, try again." << endl;
+			wrong++;
+
+			cin >> answer;
+
+			if (answer == 'e' || answer == 'E')
+			{
+
+				cout << "Well done ! Keep going !" << endl;
+
+				cin >> answer;
+
+				if (answer == 'u' || answer == 'U')
+				{
+					cout << "Well done ! Keep going !" << endl;
+
+					cin >> answer;
+				}
+
+				if (answer == 'o' || answer == 'O')
+				{
+					cout << "Excellent ! it's Confused !" << endl;
+					cout << "+_________________________+\n" << endl;
+					mark++;
+					break;
+				}
+			}
+			else if (answer == 'o' || answer == 'O')
+			{
+
+				cout << "Well done ! Keep going !" << endl;
+
+				cin >> answer;
+
+				if (answer == 'u' || answer == 'U')
+				{
+					cout << "Well done ! Keep going !" << endl;
+
+					cin >> answer;
+				}
+
+				if (answer == 'e' || answer == 'E')
+				{
+					cout << "Excellent ! it's Confused!" << endl;
+					cout << "+________________________+\n" << endl;
+					mark++;
+					break;
+				}
+			}
+			else if (answer == 'u' || answer == 'U')
+			{
+
+				cout << "Well done ! Keep going !" << endl;
+
+				cin >> answer;
+
+				if (answer == 'o' || answer == 'O')
+				{
+					cout << "Well done ! Keep going !" << endl;
+
+					cin >> answer;
+				}
+
+				if (answer == 'e' || answer == 'E')
+				{
+					cout << "Excellent ! it's Confused!" << endl;
+					cout << "+________________________+\n" << endl;
+					mark++;
+					break;
+				}
+			}
+		}
+	}
+
+	system("cls");
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+]                => The game is over <=             [+]" << endl;
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+]             You answered " << mark << " times correctly        [+]" << endl;
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+]              You answered " << wrong << " times wrong           [+]" << endl;
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+][+][+][+][+][+][+][+][+][+][+][+][+][+][+][+][+][+][+]\n" << endl;
+
+
+}
+
+void Ccheck::mode3()
+{// Vocab Country
+	int wrong = 0, mark = 0, c;
+	char answer;
+
+	system("cls");
+	cout << "* C o u n t r y *\n" << endl;
+
+	// Peru
+	cout << "1.P _ R _" << endl;
+	cout << "Answer :";
+
+	cin >> answer;
+
+
+	if (answer == 'e' || answer == 'E')
+	{
+
+		cout << "Well done ! Keep going !" << endl;
+
+		cin >> answer;
+
+		if (answer == 'u' || answer == 'U')
+		{
+			cout << "Excellent ! it's Peru !" << endl;
+			cout << "+_____________________+\n" << endl;
+			mark++;
+		}
+	}
+	else if (answer == 'u' || answer == 'U')
+	{
+
+		cout << "Well done ! Keep going !" << endl;
+
+		cin >> answer;
+
+		if (answer == 'e' || answer == 'E')
+		{
+			cout << "Excellent ! it's Peru !" << endl;
+			cout << "+_____________________+\n" << endl;
+			mark++;
+		}
+	}
+	else
+	{
+		for (c = 1; c <= 6; c++)
+		{
+			cout << "Oop! it's wrong, try again." << endl;
+			wrong++;
+
+			cin >> answer;
+
+			if (answer == 'e' || answer == 'E')
+			{
+
+				cout << "Well done ! Keep going !" << endl;
+
+				cin >> answer;
+
+				if (answer == 'u' || answer == 'U')
+				{
+					cout << "Excellent ! it's Peru !" << endl;
+					cout << "+_____________________+\n" << endl;
+					mark++;
+					break;
+				}
+			}
+			else if (answer == 'u' || answer == 'U')
+			{
+
+				cout << "Well done ! Keep going !" << endl;
+
+				cin >> answer;
+
+				if (answer == 'e' || answer == 'E')
+				{
+					cout << "Excellent ! it's Peru !" << endl;
+					cout << "+_____________________+\n" << endl;
+					mark++;
+					break;
+				}
+			}
+		}
+	}
+
+	// Laos
+	cout << "2.L _ _ S" << endl;
+	cout << "Answer :";
+
+	cin >> answer;
+
+
+	if (answer == 'a' || answer == 'A')
+	{
+
+		cout << "Well done ! Keep going !" << endl;
+
+		cin >> answer;
+
+		if (answer == 'o' || answer == 'O')
+		{
+			cout << "Excellent ! it's Laos !" << endl;
+			cout << "+_____________________+\n" << endl;
+			mark++;
+		}
+	}
+	else if (answer == 'o' || answer == 'O')
+	{
+
+		cout << "Well done ! Keep going !" << endl;
+
+		cin >> answer;
+
+		if (answer == 'a' || answer == 'A')
+		{
+			cout << "Excellent ! it's Laos !" << endl;
+			cout << "+_____________________+\n" << endl;
+			mark++;
+		}
+	}
+	else
+	{
+		for (c = 1; c <= 6; c++)
+		{
+			cout << "Oop! it's wrong, try again." << endl;
+			wrong++;
+
+			cin >> answer;
+
+			if (answer == 'a' || answer == 'A')
+			{
+
+				cout << "Well done ! Keep going !" << endl;
+
+				cin >> answer;
+
+				if (answer == 'o' || answer == 'O')
+				{
+					cout << "Excellent ! it's Laos !" << endl;
+					cout << "+_____________________+\n" << endl;
+					mark++;
+					break;
+				}
+			}
+			else if (answer == 'o' || answer == 'O')
+			{
+
+				cout << "Well done ! Keep going !" << endl;
+
+				cin >> answer;
+
+				if (answer == 'a' || answer == 'A')
+				{
+					cout << "Excellent ! it's Laos !" << endl;
+					cout << "+_____________________+\n" << endl;
+					mark++;
+					break;
+				}
+			}
+		}
+	}
+
+	// China
+	cout << "3.C H _ N A" << endl;
+	cout << "Answer :";
+
+	cin >> answer;
+
+	if (answer == 'i' || answer == 'I')
+	{
+
+		cout << "Excellent ! it's China !" << endl;
+		cout << "+______________________+\n" << endl;
+		mark++;
+	}
+	else
+	{
+		for (c = 1; c <= 6; c++)
+		{
+			cout << "Oop! it's wrong, try again." << endl;
+			wrong++;
+			cin >> answer;
+			if (answer == 'i' || answer == 'I')
+			{
+
+				cout << "Excellent ! it's China !" << endl;
+				cout << "+______________________+\n" << endl;
+				mark++;
+				break;
+			}
+		}
+	}
+
+	// Argentina
+	cout << "4._ R G _ N T _ N _" << endl;
+	cout << "Answer :";
+
+	cin >> answer;
+
+
+	if (answer == 'a' || answer == 'A')
+	{
+
+		cout << "Well done ! Keep going !" << endl;
+
+		cin >> answer;
+
+		if (answer == 'e' || answer == 'E')
+		{
+			cout << "Well done ! Keep going !" << endl;
+
+			cin >> answer;
+		}
+
+		if (answer == 'i' || answer == 'I')
+		{
+			cout << "Excellent ! it's Argentina !" << endl;
+			cout << "+__________________________+\n" << endl;
+			mark++;
+		}
+	}
+	else if (answer == 'e' || answer == 'E')
+	{
+
+		cout << "Well done ! Keep going !" << endl;
+
+		cin >> answer;
+
+		if (answer == 'i' || answer == 'I')
+		{
+			cout << "Well done ! Keep going !" << endl;
+
+			cin >> answer;
+		}
+
+		if (answer == 'a' || answer == 'A')
+		{
+			cout << "Excellent ! it's Argentina!" << endl;
+			cout << "+__________________________+\n" << endl;
+			mark++;
+		}
+	}
+	else if (answer == 'i' || answer == 'I')
+	{
+
+		cout << "Well done ! Keep going !" << endl;
+
+		cin >> answer;
+
+		if (answer == 'e' || answer == 'E')
+		{
+			cout << "Well done ! Keep going !" << endl;
+
+			cin >> answer;
+		}
+
+		if (answer == 'a' || answer == 'A')
+		{
+			cout << "Excellent ! it's Argentina!" << endl;
+			cout << "+__________________________+\n" << endl;
+			mark++;
+		}
+	}
+	else
+	{
+		for (c = 1; c <= 6; c++)
+		{
+			cout << "Oop! it's wrong, try again." << endl;
+			wrong++;
+
+			cin >> answer;
+
+
+			if (answer == 'a' || answer == 'A')
+			{
+
+				cout << "Well done ! Keep going !" << endl;
+
+				cin >> answer;
+
+				if (answer == 'e' || answer == 'E')
+				{
+					cout << "Well done ! Keep going !" << endl;
+
+					cin >> answer;
+				}
+
+				if (answer == 'i' || answer == 'I')
+				{
+					cout << "Excellent ! it's Argentina !" << endl;
+					cout << "+__________________________+\n" << endl;
+					mark++;
+					break;
+				}
+			}
+			else if (answer == 'e' || answer == 'E')
+			{
+
+				cout << "Well done ! Keep going !" << endl;
+
+				cin >> answer;
+
+				if (answer == 'i' || answer == 'I')
+				{
+					cout << "Well done ! Keep going !" << endl;
+
+					cin >> answer;
+				}
+
+				if (answer == 'a' || answer == 'A')
+				{
+					cout << "Excellent ! it's Argentina!" << endl;
+					cout << "+__________________________+\n" << endl;
+					mark++;
+					break;
+				}
+			}
+			else if (answer == 'i' || answer == 'I')
+			{
+
+				cout << "Well done ! Keep going !" << endl;
+
+				cin >> answer;
+
+				if (answer == 'e' || answer == 'E')
+				{
+					cout << "Well done ! Keep going !" << endl;
+
+					cin >> answer;
+				}
+
+				if (answer == 'a' || answer == 'A')
+				{
+					cout << "Excellent ! it's Argentina!" << endl;
+					cout << "+__________________________+\n" << endl;
+					mark++;
+					break;
+				}
+			}
+		}
+	}
+
+	// Pakistan
+	cout << "5.P _ K _ S T _ N" << endl;
+	cout << "Answer :";
+
+	cin >> answer;
+
+
+	if (answer == 'a' || answer == 'A')
+	{
+
+		cout << "Well done ! Keep going !" << endl;
+
+		cin >> answer;
+
+		if (answer == 'i' || answer == 'I')
+		{
+			cout << "Well done ! Keep going !" << endl;
+
+			cin >> answer;
+		}
+
+		if (answer == 'o' || answer == 'O')
+		{
+			cout << "Excellent ! it's Pakiston !" << endl;
+			cout << "+_________________________+\n" << endl;
+			mark++;
+		}
+	}
+	else if (answer == 'i' || answer == 'I')
+	{
+
+		cout << "Well done ! Keep going !" << endl;
+
+		cin >> answer;
+
+		if (answer == 'o' || answer == 'O')
+		{
+			cout << "Well done ! Keep going !" << endl;
+
+			cin >> answer;
+		}
+
+		if (answer == 'a' || answer == 'a')
+		{
+			cout << "Excellent ! it's Pakiston!" << endl;
+			cout << "+_________________________+\n" << endl;
+			mark++;
+		}
+	}
+	else if (answer == 'o' || answer == 'O')
+	{
+
+		cout << "Well done ! Keep going !" << endl;
+
+		cin >> answer;
+
+		if (answer == 'a' || answer == 'A')
+		{
+			cout << "Well done ! Keep going !" << endl;
+
+			cin >> answer;
+		}
+
+		if (answer == 'i' || answer == 'I')
+		{
+			cout << "Excellent ! it's Pakiston!" << endl;
+			cout << "+_________________________+\n" << endl;
+			mark++;
+		}
+	}
+	else if (answer == 'a' || answer == 'A')
+	{
+
+		cout << "Well done ! Keep going !" << endl;
+
+		cin >> answer;
+
+		if (answer == 'o' || answer == 'O')
+		{
+			cout << "Well done ! Keep going !" << endl;
+
+			cin >> answer;
+		}
+
+		if (answer == 'i' || answer == 'I')
+		{
+			cout << "Excellent ! it's Pakiston!" << endl;
+			cout << "+_________________________+\n" << endl;
+			mark++;
+		}
+	}
+	else
+	{
+		for (c = 1; c <= 6; c++)
+		{
+			cout << "Oop! it's wrong, try again." << endl;
+			wrong++;
+
+			cin >> answer;
+
+
+			if (answer == 'a' || answer == 'A')
+			{
+
+				cout << "Well done ! Keep going !" << endl;
+
+				cin >> answer;
+
+				if (answer == 'i' || answer == 'I')
+				{
+					cout << "Well done ! Keep going !" << endl;
+
+					cin >> answer;
+				}
+
+				if (answer == 'o' || answer == 'O')
+				{
+					cout << "Excellent ! it's Pakiston !" << endl;
+					cout << "+_________________________+\n" << endl;
+					mark++;
+					break;
+				}
+			}
+			else if (answer == 'i' || answer == 'I')
+			{
+
+				cout << "Well done ! Keep going !" << endl;
+
+				cin >> answer;
+
+				if (answer == 'o' || answer == 'O')
+				{
+					cout << "Well done ! Keep going !" << endl;
+
+					cin >> answer;
+				}
+
+				if (answer == 'a' || answer == 'a')
+				{
+					cout << "Excellent ! it's Pakiston!" << endl;
+					cout << "+_________________________+\n" << endl;
+					mark++;
+					break;
+				}
+			}
+			else if (answer == 'o' || answer == 'O')
+			{
+
+				cout << "Well done ! Keep going !" << endl;
+
+				cin >> answer;
+
+				if (answer == 'a' || answer == 'A')
+				{
+					cout << "Well done ! Keep going !" << endl;
+
+					cin >> answer;
+				}
+
+				if (answer == 'i' || answer == 'I')
+				{
+					cout << "Excellent ! it's Pakiston!" << endl;
+					cout << "+_________________________+\n" << endl;
+					mark++;
+					break;
+				}
+			}
+			else if (answer == 'a' || answer == 'A')
+			{
+
+				cout << "Well done ! Keep going !" << endl;
+
+				cin >> answer;
+
+				if (answer == 'o' || answer == 'O')
+				{
+					cout << "Well done ! Keep going !" << endl;
+
+					cin >> answer;
+				}
+
+				if (answer == 'i' || answer == 'I')
+				{
+					cout << "Excellent ! it's Pakiston!" << endl;
+					cout << "+_________________________+\n" << endl;
+					mark++;
+					break;
+				}
+			}
+		}
+	}
+
+	// Australia
+	cout << "6._ _ S T R _ L _ _" << endl;
+	cout << "Answer :";
+
+	cin >> answer;
+
+
+	if (answer == 'u' || answer == 'U')
+	{
+
+		cout << "Well done ! Keep going !" << endl;
+
+		cin >> answer;
+
+		if (answer == 'a' || answer == 'A')
+		{
+			cout << "Well done ! Keep going !" << endl;
+
+			cin >> answer;
+		}
+
+		if (answer == 'i' || answer == 'I')
+		{
+			cout << "Excellent ! it's Australia !" << endl;
+			cout << "+__________________________+\n" << endl;
+			mark++;
+		}
+	}
+	else if (answer == 'a' || answer == 'A')
+	{
+
+		cout << "Well done ! Keep going !" << endl;
+
+		cin >> answer;
+
+		if (answer == 'i' || answer == 'I')
+		{
+			cout << "Well done ! Keep going !" << endl;
+
+			cin >> answer;
+		}
+
+		if (answer == 'u' || answer == 'U')
+		{
+			cout << "Excellent ! it's Australia!" << endl;
+			cout << "+__________________________+\n" << endl;
+			mark++;
+		}
+	}
+	else if (answer == 'a' || answer == 'A')
+	{
+
+		cout << "Well done ! Keep going !" << endl;
+
+		cin >> answer;
+
+		if (answer == 'u' || answer == 'U')
+		{
+			cout << "Well done ! Keep going !" << endl;
+
+			cin >> answer;
+		}
+
+		if (answer == 'i' || answer == 'I')
+		{
+			cout << "Excellent ! it's Australia!" << endl;
+			cout << "+__________________________+\n" << endl;
+			mark++;
+		}
+	}
+	else if (answer == 'i' || answer == 'I')
+	{
+
+		cout << "Well done ! Keep going !" << endl;
+
+		cin >> answer;
+
+		if (answer == 'u' || answer == 'U')
+		{
+			cout << "Well done ! Keep going !" << endl;
+
+			cin >> answer;
+		}
+
+		if (answer == 'a' || answer == 'A')
+		{
+			cout << "Excellent ! it's Australia!" << endl;
+			cout << "+__________________________+\n" << endl;
+			mark++;
+		}
+	}
+	else
+	{
+		for (c = 1; c <= 6; c++)
+		{
+			cout << "Oop! it's wrong, try again." << endl;
+			wrong++;
+
+			cin >> answer;
+
+
+			if (answer == 'u' || answer == 'U')
+			{
+
+				cout << "Well done ! Keep going !" << endl;
+
+				cin >> answer;
+
+				if (answer == 'a' || answer == 'A')
+				{
+					cout << "Well done ! Keep going !" << endl;
+
+					cin >> answer;
+				}
+
+				if (answer == 'i' || answer == 'I')
+				{
+					cout << "Excellent ! it's Australia !" << endl;
+					cout << "+__________________________+\n" << endl;
+					mark++;
+					break;
+				}
+			}
+			else if (answer == 'a' || answer == 'A')
+			{
+
+				cout << "Well done ! Keep going !" << endl;
+
+				cin >> answer;
+
+				if (answer == 'i' || answer == 'I')
+				{
+					cout << "Well done ! Keep going !" << endl;
+
+					cin >> answer;
+				}
+
+				if (answer == 'u' || answer == 'U')
+				{
+					cout << "Excellent ! it's Australia!" << endl;
+					cout << "+__________________________+\n" << endl;
+					mark++;
+					break;
+				}
+			}
+			else if (answer == 'a' || answer == 'A')
+			{
+
+				cout << "Well done ! Keep going !" << endl;
+
+				cin >> answer;
+
+				if (answer == 'u' || answer == 'U')
+				{
+					cout << "Well done ! Keep going !" << endl;
+
+					cin >> answer;
+				}
+
+				if (answer == 'i' || answer == 'I')
+				{
+					cout << "Excellent ! it's Australia!" << endl;
+					cout << "+__________________________+\n" << endl;
+					mark++;
+					break;
+				}
+			}
+			else if (answer == 'i' || answer == 'I')
+			{
+
+				cout << "Well done ! Keep going !" << endl;
+
+				cin >> answer;
+
+				if (answer == 'u' || answer == 'U')
+				{
+					cout << "Well done ! Keep going !" << endl;
+
+					cin >> answer;
+				}
+
+				if (answer == 'a' || answer == 'A')
+				{
+					cout << "Excellent ! it's Australia!" << endl;
+					cout << "+__________________________+\n" << endl;
+					mark++;
+					break;
+				}
+			}
+		}
+	}
+	system("cls");
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+]                => The game is over <=             [+]" << endl;
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+]             You answered " << mark << " times correctly        [+]" << endl;
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+]              You answered " << wrong << " times wrong           [+]" << endl;
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+][+][+][+][+][+][+][+][+][+][+][+][+][+][+][+][+][+][+]\n" << endl;
+}
+
+
+
+
+void Cshow::showMain()
+{
+	system("cls");
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+]      ::.Welcome to GUESSING VOCAB GAME.::         [+]" << endl;
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+]        +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+            [+]" << endl;
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+]                PRESS 1 => How to play             [+]" << endl;
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+]                PRESS 2 => Animal                  [+]" << endl;
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+]                PRESS 3 => Mood                    [+]" << endl;
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+]                PRESS 4 => Country                 [+]" << endl;
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+]                PRESS 5 => Exit                    [+]" << endl;
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+][+][+][+][+][+][+][+][+][+][+][+][+][+][+][+][+][+][+]\n" << endl;
+
+}
+void Cshow::showHow()
+{
+	system("cls");
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+]                 >> How to play <<                 [+]" << endl;
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+]  1. Choose the mode animal, mood or country       [+]" << endl;
+	cout << "[+]  2. Guess one letter at a time and press enter    [+]" << endl;
+	cout << "[+]     buttom after the number                       [+]" << endl;
+	cout << "[+]  3. You will be given 6 chances                   [+]" << endl;
+	cout << "[+]  4. Vocabularies will get more difficult          [+]" << endl;
+	cout << "[+]  5. If you use all the chances you ..             [+]" << endl;
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+]                   !! Game Over !!                 [+]" << endl;
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+]                                                   [+]" << endl;
+	cout << "[+][+][+][+][+][+][+][+][+][+][+][+][+][+][+][+][+][+][+]\n" << endl;
+
+}
+
+
+int main()
+{
+	Ccheck select;
+	Cshow show;
+	int choose;
+	char ans;
+
+	do
+	{
+		show.showMain();
+
+		cin >> choose;
+
+		if (choose == 1)
+		{
+			show.showHow();
+		}
+
+		else if (choose == 2)
+		{
+			select.mode();
+		}
+
+		else if (choose == 3)
+		{
+			select.mode2();
+		}
+
+		else if (choose == 4)
+		{
+			select.mode3();
+		}
+
+
+		cout << "Press B to go back or 5 to exit : ";
+		cin >> ans;
+
+
+
+	} while (ans == 'b' || ans == 'B');
+
+
+}
